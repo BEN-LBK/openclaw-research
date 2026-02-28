@@ -2,6 +2,8 @@
 
 这是使用 OpenClaw Agent 自动生成的研究报告仓库。
 
+**📦 仓库地址：** https://github.com/BEN-LBK/openclaw-research
+
 ## 📊 研究报告
 
 ### AI 编程与自动化
@@ -24,6 +26,15 @@
 - [记忆索引](MEMORY.md)
 - [研究主题](memory/topics.md)
 - [每日日志](memory/2026-02-28.md)
+
+## 🔧 自动上传
+
+本仓库配置了自动上传脚本，每次生成新报告后会自动推送到GitHub。
+
+```bash
+# 手动上传
+./scripts/auto-upload.sh
+```
 
 ---
 
