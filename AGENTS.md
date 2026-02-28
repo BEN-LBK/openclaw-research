@@ -23,7 +23,30 @@ message(
 
 ### 2. 执行任务
 
-### 3. 完成后发送结果到群（使用 message tool）
+### 3. 生成研究报告后自动上传GitHub
+
+**每次生成报告后，必须执行以下操作：**
+
+```bash
+# 1. 切换到工作目录
+cd /Users/ben/.openclaw/workspace-research
+
+# 2. 添加报告到Git
+git add reports/
+
+# 3. 提交更改
+git commit -m "docs: 新增/更新研究报告 - [报告名称]"
+
+# 4. 推送到GitHub
+git push origin main
+```
+
+**或者使用自动脚本：**
+```bash
+./scripts/auto-upload.sh
+```
+
+### 4. 完成后发送结果到群（使用 message tool）
 ```
 message(
   action="send",
